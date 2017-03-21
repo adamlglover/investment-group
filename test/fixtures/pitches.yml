@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  pitch_name: MyString
+  author: MyString
+  company_name: MyString
+  sector_name: MyString
+  subsector_name: MyString
+
+two:
+  pitch_name: MyString
+  author: MyString
+  company_name: MyString
+  sector_name: MyString
+  subsector_name: MyString

@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  sector_name: MyString
+  sector_analysis: MyString
+  subsector_name: MyString
+
+two:
+  sector_name: MyString
+  sector_analysis: MyString
+  subsector_name: MyString

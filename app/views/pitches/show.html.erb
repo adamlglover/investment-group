@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Pitch name:</strong>
+  <%= @pitch.pitch_name %>
+</p>
+<p>
+  
+  <strong>Pitch Date:</strong>
+  <%= @pitch.pitch_date %>
+</p>
+
+<p>
+  <strong>Author:</strong>
+  <%= @pitch.author %>
+</p>
+
+<p>
+  <strong>Company name:</strong>
+  <%= @pitch.company_name %>
+</p>
+
+<p>
+  <strong>Sector name:</strong>
+  <%= @pitch.sector_name %>
+</p>
+
+<p>
+  <strong>Subsector name:</strong>
+  <%= @pitch.subsector_name %>
+</p>
+
+<%= link_to 'Edit', edit_pitch_path(@pitch) %> |
+<%= link_to 'Back', pitches_path %>

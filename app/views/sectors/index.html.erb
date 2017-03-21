@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Sectors</h1>
+<div class="row">
+<table class="table">
+  <!--
+  <thead>
+    <tr>
+      <th>Sector name</th>
+      <th>Sector analysis</th>
+      <th>Subsector name</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+-->
+
+    
+    
+  
+  <div class="col-md-4">
+    <% @sectors.each do |sector| %>
+      <div class="thumbnail">    
+        <div class="row">
+        <div class="col-md-12">Sector Name:<%= link_to sector.sector_name, sector %></div>
+        <div class="col-md-12">Sector Analysis:<%= truncate(sector.sector_analysis) %></div>
+        <div class="col-md-12">Subsector Name:<%= sector.subsector_name %></div>
+        <div class="col-md-12"><%= link_to 'Show', sector %></div>
+        <div class="col-md-12"><%= link_to 'Edit', edit_sector_path(sector) %></div>
+        <div class="col-md-12"><%= link_to 'Destroy', sector, method: :delete, data: { confirm: 'Are you sure?' } %></div>
+</div>
+</div>
+   <% end %>
+  </div>
+ 
+</table>
+</div>
+<br>
+
+<%= link_to 'New Sector', new_sector_path %>
