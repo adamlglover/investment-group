@@ -1,36 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head> 
-
-  <meta charset="utf-8" />
-	<link rel="icon" type="image/png" href="app/assets/images/favicon.ico">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-
-  <title>Investment Group</title> 
-  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
-  <meta name="viewport" content="width=device-width" />  
+  <%= render 'layouts/header' %>
   
-    <!-- Bootstrap core CSS     -->
-   <!-- Latest compiled and minified CSS -->
-
-
-    <!--     Fonts and icons     -->
-    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'> 
-    <link rel="icon" type="image/png" href="/assets/fonts/pe-icon-7-stroke.css">
-  
-  <%= favicon_link_tag '/favicon.ico' %>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
   
-  
-
 </head>
 <body>
-<% render 'layouts/sidebar' %>
-  <%= yield %>
+<%= render 'layouts/sidebar' %>
+<%= yield %>  
+
+
 </body>
-
-
+<%= render 'layouts/footer' %>
 </html>

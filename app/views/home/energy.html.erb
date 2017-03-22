@@ -1,0 +1,30 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th>Pitch name</th>
+      <th>Pitch Date</th>
+      <th>Author</th>
+      <th>Company name</th>
+      <th>Sector name</th>
+      <th>Subsector name</th>
+      <th>Download</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @pitches.each do |pitch| %>
+      <tr>
+        <td><%= link_to pitch.pitch_name, pitch %></td>
+        <td><%= pitch.pitch_date %></td>
+        <td><%= pitch.author %></td>
+        <td><%= pitch.company_name %></td>
+        <td><%= pitch.sector_name %></td>
+        <td><%= pitch.subsector_name %></td>
+        <td><%= link_to 'Show', pitch %></td>
+        <td><%= link_to 'Edit', edit_pitch_path(pitch) %></td>
+        <td><%= link_to 'Destroy', pitch, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

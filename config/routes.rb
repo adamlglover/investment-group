@@ -10,7 +10,10 @@ Rails.application.routes.draw do
   get 'home/energy'
   get 'home/finance'
   get 'home/health'
-  get 'home/industrial'
+  get 'home/industrials'
+  get 'home/medtel'
+  get 'home/technology'
+  get 'home/utilities'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
