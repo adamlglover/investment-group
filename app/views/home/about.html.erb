@@ -1,4 +1,5 @@
-  <div class="main-panel">
+<!--All Industries Index-->
+        <div class="main-panel">
         <nav class="navbar navbar-default navbar-fixed">
             <div class="container-fluid">
                 <div class="navbar-header">
@@ -8,7 +9,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <p><a class="navbar-brand" href="dashboard.html">&nbsp;Home</a></p>
+                    <p><a class="navbar-brand" href="/">&nbsp;Home</a></p>
                 </div>
                
                     <!-- <ul class="nav navbar-nav navbar-right">
@@ -30,40 +31,40 @@
                          <div class="collapse navbar-collapse">
                 </div>
             </div>
-        </nav>
-
-
+        </nav> 
         <div class="content">
-            <div class="container-fluid">
-<table class="table">
-  <thead>
-    <tr>
-      <th>Pitch name</th>
-      <th>Pitch Date</th>
-      <th>Author</th>
-      <th>Company name</th>
-      <th>Sector name</th>
-      <th>Subsector name</th>
-      <th>Download</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @pitches.each do |pitch| %>
-      <tr>
-        <td><%= link_to pitch.pitch_name, pitch %></td>
-        <td><%= pitch.pitch_date %></td>
-        <td><%= pitch.author %></td>
-        <td><%= pitch.company_name %></td>
-        <td><%= pitch.sector_name %></td>
-        <td><%= pitch.subsector_name %></td>
-        <td><%= pitch.document_url %></td>
-        <td><%= link_to 'Show', pitch %></td>
-        <td><%= link_to 'Edit', edit_pitch_path(pitch) %></td>
-        <td><%= link_to 'Destroy', pitch, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr> 
-    <% end %>
-   </table> 
+            <div class="container-fluid"> 
+      
+        <h1>HU Investment Group Research Database</h1>
+       
+        
+        <div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-block">
+        <h3 class="card-title">Instructions</h3>
+        <p class="card-text">
+           Upload or view an industry in the view sectors section. Please be advised that this is confidential and propritory information and should not be shared.
+           Once pitches and other items are deleted you cannot retrieve those files so  
+           
+        </p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
     </div>
+  </div>
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-block">
+        <h3 class="card-title">Special title treatment</h3>
+        <p class="card-text">
+        
+            Rutrum pariatur eu mauris dui donec. Malesuada neque in adipiscing accumsan, hendrerit nullam volutpat mauris donec, 
+            diam tincidunt nec nemo volutpat, vivamus adipiscing quis dolorem luctus. Posuere pellentesque metus nulla ante ut, 
+            libero viverra risus ullamcorper nam. 
+   
+        </p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
     </div>
+  </div>
+</div> 

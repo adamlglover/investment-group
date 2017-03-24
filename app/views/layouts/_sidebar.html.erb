@@ -19,12 +19,12 @@
             <ul class="nav">
                 <!-- Dropdown Template -->
 <li>
-    <a href="home/about.html">
+    
        <i class="fa fa-address-book" aria-hidden="true"></i>
-        <p>About</p>
-    </a>
+        <p><%= link_to "About", home_about_path %></p>
 </li>
-<li class="active" ><a href="/"><i class="fa fa-circle-o-notch" aria-hidden="true"></i>
+<li class="active" ><a href="/">
+    <i class="fa fa-circle-o-notch" aria-hidden="true"></i>
     <p>View All Industries</p></a>
 </li>                             
 <li>
@@ -33,55 +33,50 @@
         <p><strong>Select Sector</strong>
             <b class="caret"></b>
         </p>
+
     <div class="collapse" id="pagesExamples">
         <ul class="nav">
-                 <li >
-    <a href="home/consumer.html">
+
        <i class="fa fa-users" aria-hidden="true"></i>
-        <p>Consumers</p>
-    </a>
-</li>
+        <p><%= link_to "Consumers", home_consumer_path %></p>
+
 <li>
-    <a href="home/energy.html">
+    
         <i class="fa fa-plug" aria-hidden="true"></i>
-        <p>Energy</p>
-    </a>
+        <p><%= link_to "Energy", home_energy_path %></p>
+    
 </li>
 <li>
-    <a href="home/finance.html">
+    
         <i class="fa fa-money" aria-hidden="true"></i>
-        <p>Financials</p>
-    </a>
+        <p><%= link_to "Finance", home_finance_path %></p>
+    
 </li>
 <li>
-    <a href="home/health.html">
+    
         <i class="fa fa-heart-o" aria-hidden="true"></i>
-        <p>Healthcare</p>
-    </a>
+        <p><%= link_to "Healthcare", home_health_path %></p>
+    
 </li>
 <li>
-    <a href="home/industrials.html">
         <i class="fa fa-flask" aria-hidden="true"></i>
-        <p>Industrials</p>
-    </a>
+        <p><p><%= link_to "Industrials", home_industrials_path %></p></p>
 </li>
 <li>
-    <a href="home/medtel.html">
+    
         <i class="fa fa-television" aria-hidden="true"></i>
-        <p>Media/Telecom</p>
+        <p><%= link_to "MedTel", home_medtel_path %></p>
     </a>
 </li>
 <li>
-    <a href="home/technology.html">
+
         <i class="fa fa-laptop" aria-hidden="true"></i>
-        <p>Technology</p>
-    </a>
+        <p><%= link_to "Technology", home_technology_path %></p>
+
 </li>
  <li>
-    <a href="home/utilities.html">
         <i class="fa fa-bolt" aria-hidden="true"></i>
-        <p>Utilities</p>
-    </a>
+        <p><%= link_to "Utilities", home_utilities_path %></p>
 </li> 
 </ul>           
         </li>
