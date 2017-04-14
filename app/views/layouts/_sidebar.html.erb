@@ -1,92 +1,91 @@
 <div class="wrapper">
-    <div class="sidebar" data-color="blue" data-image="http://res.cloudinary.com/dop68xspe/image/upload/v1490041566/side_ln9lur.gif">
-
-    <!--
+	<div class="sidebar" data-color="blue" data-image="http://res.cloudinary.com/dop68xspe/image/upload/v1490041566/side_ln9lur.gif">
+		<!--
 
         Tip 1: you can change the color of the sidebar using: data-color="blue | azure | green | orange | red | purple"
         Tip 2: you can also add an image using data-image tag
 
     -->
-
-    	<div class="sidebar-wrapper">
-            <div class="logo">
-                <center>
-                    <h6>Investment Group</h6>
-                </center>
-                </a>
-            </div>
-            
-            <ul class="nav">
-                <!-- Dropdown Template -->
-<li>
-    
-       <i class="fa fa-address-book" aria-hidden="true"></i>
-        <p><%= link_to "About", home_about_path %></p>
-</li>
-<li>
-   <i class="fa fa-plus-circle" aria-hidden="true"></i> 
-   <p><%= link_to "Upload a new pitch", new_pitch_path %></p>
-</li>
-<li class="active" ><a href="/">
-    <i class="fa fa-circle-o-notch" aria-hidden="true"></i>
-    <p>View All Sectors</p></a>
-</li>
-
-<li>
-    <a data-toggle="collapse" href="#pagesExamples">
-       <i class="fa fa-plus-circle" aria-hidden="true"></i>
-        <p><strong>Select Sector</strong>
-            <b class="caret"></b>
-        </p>
-
-
-    <div class="collapse" id="pagesExamples">
-        <ul class="nav">
-
-       <i class="fa fa-users" aria-hidden="true"></i>
-        <p><%= link_to "Consumers", home_consumer_path %></p>
-
-<li>
-    
-        <i class="fa fa-plug" aria-hidden="true"></i>
-        <p><%= link_to "Energy", home_energy_path %></p>
-    
-</li>
-<li>
-    
-        <i class="fa fa-money" aria-hidden="true"></i>
-        <p><%= link_to "Finance", home_finance_path %></p>
-    
-</li>
-<li>
-    
-        <i class="fa fa-heart-o" aria-hidden="true"></i>
-        <p><%= link_to "Healthcare", home_health_path %></p>
-    
-</li>
-<li>
-        <i class="fa fa-flask" aria-hidden="true"></i>
-        <p><p><%= link_to "Industrials", home_industrials_path %></p></p>
-</li>
-<li>
-    
-        <i class="fa fa-television" aria-hidden="true"></i>
-        <p><%= link_to "MedTel", home_medtel_path %></p>
-    </a>
-</li>
-<li>
-
-        <i class="fa fa-laptop" aria-hidden="true"></i>
-        <p><%= link_to "Technology", home_technology_path %></p>
-
-</li>
- <li>
-        <i class="fa fa-bolt" aria-hidden="true"></i>
-        <p><%= link_to "Utilities", home_utilities_path %></p>
-</li> 
-</ul>           
-        </li>
-                  
-<!-- Dropwdown Tempalte End -->
-    	</div>
-    </div>
+		<div class="sidebar-wrapper">
+			<div class="logo">
+				<center>
+					<h6>Investment Group</h6>
+				</center>
+			</div>
+			<ul class="nav">
+				<!-- Dropdown Template -->
+					
+				<li>
+				
+				<%= link_to home_about_path do %>
+				    <i aria-hidden="true" class="fa fa-address-book"></i> About
+				<% end %>
+				</li> 
+					
+				<li>
+				<%= link_to new_pitch_path do %>
+				<i aria-hidden="true" class="fa fa-plus-circle"></i> Upload a New Pitch
+				<% end %>
+				</li>
+				<li>
+					<a href="/"><i aria-hidden="true" class="fa fa-circle-o-notch"></i>
+					<p>View All Sectors</p></a>
+				</li>
+				
+				<li>
+					<a data-toggle="collapse" href="#pagesExamples"><i aria-hidden="true" class="fa fa-plus-circle"></i>
+					<p><strong>Select Sector</strong> <b class="caret"></b></p>
+					<div class="collapse" id="pagesExamples">
+						<ul class="nav">
+							
+							<li style="list-style: none">
+							<li>	
+								<%= link_to home_consumer_path do %>
+								<i aria-hidden="true" class="fa fa-users"></i>Consumers
+								<% end %>
+							</li>
+							<li>
+								<%= link_to home_energy_path do %>
+								<i aria-hidden="true" class="fa fa-plug"></i>Energy
+								<% end %>
+							</li>
+							<li>
+								<%= link_to home_finance_path do %>
+								<i aria-hidden="true" class="fa fa-money"></i>Finance
+								<% end %>
+							</li>
+						
+							<li>
+								<%= link_to home_health_path do %>
+								<i aria-hidden="true" class="fa fa-heart-o"></i>Health
+								<% end %>
+							</li>
+							
+							<li>
+								<%= link_to home_industrials_path do %>
+								<i aria-hidden="true" class="fa fa-flask"></i>Industrials
+								<% end %>
+							</li>
+							<li>
+								<%= link_to home_medtel_path do %>
+								<i aria-hidden="true" class="fa fa-television"></i>MedTel
+								<% end %>
+							</li>
+								<li>
+									<%= link_to home_technology_path do %>
+									<i aria-hidden="true" class="fa fa-laptop"></i>Technology
+									<% end %>
+								</li>
+							<li>
+								<%= link_to  home_utilities_path do %>
+								<i aria-hidden="true" class="fa fa-bolt"></i>Utilities
+								<% end %>
+							</li>
+						</ul>
+					</div></a>
+				</li>
+			
+				
+			</ul><!-- Dropwdown Tempalte End -->
+		</div>
+	</div>

@@ -1,34 +1,35 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Pitch name:</strong>
-  <%= @pitch.pitch_name %>
-</p>
-<p>
-  
+<p class="form-control">
   <strong>Pitch Date:</strong>
   <%= @pitch.pitch_date %>
 </p>
 
-<p>
+<p class="form-control">
   <strong>Author:</strong>
   <%= @pitch.author %>
 </p>
 
-<p>
+<p class="form-control">
   <strong>Company name:</strong>
   <%= @pitch.company_name %>
 </p>
 
-<p>
+<p class="form-control">
   <strong>Sector name:</strong>
   <%= @pitch.sector_name %>
 </p>
 
-<p>
+<p class="form-control">
   <strong>Subsector name:</strong>
   <%= @pitch.subsector_name %>
 </p>
 
-<%= link_to 'Edit', edit_pitch_path(@pitch) %> |
+<p class="form-control">
+  <strong>Download</strong>
+  <%= link_to "File", @pitch.document_url %>
+  
+</p>
+
+<%= link_to 'Edit', edit_pitch_path(@pitch) %> 
 <%= link_to 'Back', pitches_path %>

@@ -10,30 +10,29 @@
       </ul>
     </div>
   <% end %>
-
-  <div class="field">
+  <div class="form-group">
     <%= f.label :pitch_name %><br>
-    <%= f.text_field :pitch_name %>
+    <%= f.text_field :pitch_name, class: 'form-control' %>
   </div>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :pitch_date %><br>
-    <%= f.date_field :pitch_date %>
+    <%= f.date_field :pitch_date, class: 'form-control' %>
   </div>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :author %><br>
-    <%= f.text_field :author %>
+    <%= f.text_field :author, class: 'form-control' %>
   </div>
   <div class="field">
     <%= f.label :company_name %><br>
-    <%= f.text_field :company_name %>
+    <%= f.text_field :company_name, class: 'form-control' %>
   </div>
   <div class="field">
     <%= f.label :sector_name %><br>
-    <%= f.text_field :sector_name %>
+    <%= f.collection_select(:sector_name, Sector.all, :sector_name, :sector_name, :prompt => true) %>
   </div>
   <div class="field">
     <%= f.label :subsector_name %><br>
-    <%= f.text_field :subsector_name %>
+    <%= f.text_field :subsector_name, class: 'form-control' %>
   </div>
   <div class="field">
     <%= f.label :document %><br>

@@ -73,6 +73,6 @@ class PitchesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def pitch_params
-      params.require(:pitch).permit(:pitch_name, :pitch_date, :author, :company_name, :sector_name, :subsector_name)
+      params.require(:pitch).permit(:pitch_name, :pitch_date, :author, :company_name, :sector_name, :subsector_name, :document)
     end
 end
