@@ -1,5 +1,5 @@
 <div class="wrapper">
-	<div class="sidebar" data-color="blue" data-image="http://res.cloudinary.com/dop68xspe/image/upload/v1490041566/side_ln9lur.gif">
+	<div class="sidebar" data-color="blue" data-image="http://res.cloudinary.com/dop68xspe/image/upload/v1490041566/side_ln9lur.gif" onerror=this.src="http://res.cloudinary.com/dop68xspe/image/upload/v1492147108/ny_l0h1w4.jpg" >
 		<!--
 
         Tip 1: you can change the color of the sidebar using: data-color="blue | azure | green | orange | red | purple"
@@ -21,6 +21,16 @@
 				    <i aria-hidden="true" class="fa fa-address-book"></i> About
 				<% end %>
 				</li> 
+				
+				<!--- Needs Attentions Causing Application to fails--> 
+				<li>
+				<%= link_to pitches_path do %>
+				    <i aria-hidden="true" class="fa fa-id-card"></i> All Pitches
+				<% end %>
+				</li> 
+				
+				
+				
 					
 				<li>
 				<%= link_to new_pitch_path do %>

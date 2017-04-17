@@ -22,10 +22,10 @@
         <td><%= pitch.company_name %></td>
         <td><%= pitch.sector_name %></td>
         <td><%= pitch.subsector_name %></td>
-        <td><%= pitch.document_url %></td>
+        
         <td><%= link_to 'Show', pitch %></td>
         <td><%= link_to 'Edit', edit_pitch_path(pitch) %></td>
-        <td><%= link_to 'Destroy', pitch, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Delete', pitch, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr> 
     <% end %>
    </table> 

@@ -10,7 +10,7 @@
             	<div class="container-fluid">
 			<%= smart_listing_controls_for(:pitches, {class: "form-inline text-right"}) do %>
 		<div class="f">
-			<%= text_field_tag :filter, '', class: "search", placeholder: "Filter results here", autocomplete: "off" %>
+			<%= text_field_tag :filter, '', class: "search", placeholder: "Search results here", autocomplete: "on" %>
 		</div>
 		<% end %>
 					<table class="table table-hover table-striped">
@@ -52,37 +52,4 @@
                     </div>
 
                 </div>
-
-
-        <footer class="footer">
-            <div class="container-fluid">
-                <nav class="pull-left">
-                    <ul>
-                        <li>
-                            <a href="#">
-                                Home
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Company
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                Portfolio
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                               Blog
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-                <p class="copyright pull-right">
-                    &copy; 2017 made by Emerging Coders
-                </p>
-            </div>
-        </footer>
 
