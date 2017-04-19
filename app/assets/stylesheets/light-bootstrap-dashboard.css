@@ -242,7 +242,7 @@ input:focus {
   position: relative;
   max-height: none;
   min-height: 100%;
-  overflow: hidden;
+  overflow: inherit;
   width: 260px;
   z-index: 4;
 }
@@ -303,11 +303,11 @@ input:focus {
 }
 .sidebar .nav li:hover > a {
   background: rgba(255, 255, 255, 0.13);
-  opacity: 1;
+  opacity: 0;
 }
 .sidebar .nav li.active > a {
   color: #FFFFFF;
-  opacity: 1;
+  opacity: 0;
   background: rgba(255, 255, 255, 0.23);
 }
 .sidebar .nav p {
